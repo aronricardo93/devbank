@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 
 import java.math.BigDecimal;
 
-@Entity
+@Entity(name = "tbCard")
 public class Card {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
