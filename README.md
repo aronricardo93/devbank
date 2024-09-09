@@ -38,8 +38,19 @@ classDiagram
     -String description
   }
 
+  class BaseItem{
+    <<abstract>>
+    -Long id
+    -String icon
+    -String description
+  }
+
+  BaseItem <|-- Feature
+  BaseItem <|-- News
   User "1" *-- "1" Account
   User "1" *-- "N" Feature
   User "1" *-- "1" Card
   User "1" *-- "N" News
+
+  
 ```
