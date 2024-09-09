@@ -7,9 +7,9 @@ classDiagram
     -Long id
     -String name
     -Account account
-    -Feature[] features
+    -List<Feature> features
     -Card card
-    -News[] news
+    -List<News> news
   }
 
   class Account {
